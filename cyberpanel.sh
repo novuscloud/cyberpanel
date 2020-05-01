@@ -27,8 +27,8 @@ CENTOS_8="False"
 WATCHDOG="OFF"
 BRANCH_NAME="v${TEMP:12:3}.${TEMP:25:1}"
 VIRT_TYPE=""
-GIT_URL="github.com/usmannasir/cyberpanel"
-GIT_CONTENT_URL="raw.githubusercontent.com/usmannasir/cyberpanel"
+GIT_URL="github.com/novuscloud/cyberpanel"
+GIT_CONTENT_URL="raw.githubusercontent.com/novuscloud/cyberpanel"
 
 
 check_return() {
