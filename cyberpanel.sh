@@ -190,9 +190,9 @@ rm -rf /root/cyberpanel-tmp
 }
 
 special_change(){
-sed -i 's|cyberpanel.sh|'$DOWNLOAD_SERVER'|g' install.py
-sed -i 's|mirror.cyberpanel.net|'$DOWNLOAD_SERVER'|g' install.py
-sed -i 's|git clone https://github.com/usmannasir/cyberpanel|echo downloaded|g' install.py
+#sed -i 's|cyberpanel.sh|'$DOWNLOAD_SERVER'|g' install.py
+#sed -i 's|mirror.cyberpanel.net|'$DOWNLOAD_SERVER'|g' install.py
+sed -i 's|git clone https://github.com/novuscloud/cyberpanel|echo downloaded|g' install.py
 #change to CDN first, regardless country
 #sed -i 's|http://|https://|g' install.py
 
