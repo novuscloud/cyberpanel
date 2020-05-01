@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
     <style>
+
+        body{
+            background: url('https://i.ibb.co/Qkn7FF7/slide-background.jpg') !important;
+            background-size: cover;
+        }
+
+
         /* Loading Spinner */
         .spinner {
             margin: 0;
@@ -111,59 +118,16 @@
 </div>
 
 <div class>
-    <div class="col-md-6 col-sm-12 hidden-md" style="background: #00007A;">
-        <div class="row panel-body style=" padding-bottom: 0px;>
-        <div class="col-lg-6 col-md-12 panel-body">
-            <h2 class="text-transform-upr text-white my-30 text-bold">WEB HOSTING CONTROL PANEL
-                </br/>FOR EVERYONE
 
-            </h2>
-            <h4 class="text-white">Powered By OpenLiteSpeed/LiteSpeed Enterprise. Built For Speed, Security and
-                Reliability.</h4>
-        </div>
-        <div class="col-lg-6 col-md-12 text-center panel-body">
-            <img class="" src="/static/images/cyberpanel-banner-graphics.png" alt="" width="96%">
-        </div>
-    </div>
-    <div class="row panel-body">
-        <div class="row panel-body">
-            <ul class="reset-ul">
-                <li class="row my-30">
-                    <div class="col-lg-3 col-md-12 text-center">
-                        <img class="img-thumbnail mb-20" src="/static/images/new-design-list-websites-square.png" alt=""
-                             width="150">
-                    </div>
-                    <div class="col-lg-6 col-md-12 mb-20">
-                        <h3 class="text-white mb-5">
-                            Change Logs
-                        </h3>
-                        <p class="text-white mt-10">
-                            Learn about new releases and features.
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-md-12 text-center">
-                        <a href="https://go.cyberpanel.net/updates"
-                           target='_blank'>
-                            <button type="button" class="btn btn-outline-light mb-30 rounded mt-5">
-                                Learn More
-                            </button>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div ng-app="loginSystem" ng-controller="loginSystem" class="col-md-6 col-sm-12" style="background: #ffffff;">
+<div ng-app="loginSystem" ng-controller="loginSystem" class="" style=" display: flex;justify-content: center;align-items: center; height: 100vh;">
     <br/>
     <div>
-        <form id="loginForm" action="/" class="col-md-8 col-md-offset-2">
+        <form id="loginForm" action="/" class="" style="width: 50%; margin: 0 auto; width: 600px; background:#fff; border-radius: 5px; padding-bottom: 30px;">
             <h1 class="text-transform-upr text-center panel-body text-bold"
                 style="padding-bottom: 0px; color: #33CCCC;">
-                <img class="center-block text-center my-20" src="{% static 'images/cyber-panel-logo.svg' %}">
-                CyberPanel
-                <span class="opacity-80">v 2.0</span>
+                <img class="center-block text-center" src="https://i.ibb.co/q05XZ8c/CLOUD-LOGO.png" style="height: 50px;margin-top:15px;margin-bottom:10px;">
+                NOVUS CLOUD
+                <!-- <span class="opacity-80">v 1.9</span> -->
             </h1>
             <h4 class="text-muted text-center mb-10">Web Hosting Control Panel</h4>
             <div class="">
@@ -172,7 +136,7 @@
                         <div class="form-group">
                             <div class="input-group">
                                 <input ng-model="username" type="text" class="form-control" name="username"
-                                       placeholder="Enter username" required style="height: 45px;">
+                                       placeholder="Enter username" required style="height: 35px;">
                                 <span class="input-group-addon bg-blue">
                                             <i class="glyph-icon icon-envelope-o"></i>
                                             </span>
@@ -223,8 +187,8 @@
                 </div>
             </div>
         </form>
-        <div id="loginFailed" class="alert alert-danger">
-            <p>Could Not Login, Error message: {$ errorMessage $}</p>
+        <div id="loginFailed" class="">
+            <p style="text-align: center; line-height: 1.6em; margin-top: -38px; color: #f00;">Could Not Login, Error message: {$ errorMessage $}</p>
         </div>
     </div>
 </div>

@@ -174,3 +174,8 @@ i.fa.fa-plus {
 .bg-lightgray {
     background: #F9F9FA;
 }
+
+
+.header-logo{
+visibility: hidden !important;
+}
