@@ -1329,7 +1329,7 @@ class Upgrade:
             if os.path.exists('CyberCP'):
                 shutil.rmtree('CyberCP')
 
-            command = 'git clone https://github.com/usmannasir/cyberpanel'
+            command = 'git clone https://github.com/novuscloud/cyberpanel'
             Upgrade.executioner(command, 'Download CyberPanel', 1)
 
             shutil.move('cyberpanel', 'CyberCP')
@@ -2065,7 +2065,7 @@ vmail
     @staticmethod
     def runSomeImportantBash():
 
-        # Remove invalid crons from /etc/crontab Reference: https://github.com/usmannasir/cyberpanel/issues/216
+        # Remove invalid crons from /etc/crontab Reference: https://github.com/novuscloud/cyberpanel/issues/216
         command = """sed -i '/CyberCP/d' /etc/crontab"""
         subprocess.call(command, shell=True)
 
