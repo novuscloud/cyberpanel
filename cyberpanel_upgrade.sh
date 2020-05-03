@@ -7,7 +7,7 @@ SERVER_OS='Undefined'
 OUTPUT=$(cat /etc/*release)
 TEMP=$(curl --silent https://cyberpanel.net/version.txt)
 BRANCH_NAME=v${TEMP:12:3}.${TEMP:25:1}
-GIT_URL="github.com/usmannasir/cyberpanel"
+GIT_URL="github.com/novuscloud/cyberpanel"
 GIT_CONTENT_URL="raw.githubusercontent.com/usmannasir/cyberpanel"
 SERVER_COUNTRY="unknow"
 SERVER_COUNTRY=$(curl --silent --max-time 5 https://cyberpanel.sh/?country)
@@ -219,7 +219,7 @@ sed -i 's|wget  https://raw.githubusercontent.com/usmannasir/cyberpanel/v1.9.4/l
 sed -i 's|wget  https://raw.githubusercontent.com/usmannasir/cyberpanel/%s/lscpd-0.2.4 -P /usr/local/lscp/bin/|cp -f /usr/local/CyberCP/lscpd-0.2.4 /usr/local/lscp/bin/lscpd-0.2.4|g' upgrade.py
 sed -i $'s/0.2.4\' % (branch)/0.2.4\'/' upgrade.py
 sed -i 's|raw.githubusercontent.com/usmannasir/cyberpanel|'${GIT_CONTENT_URL}'|g' upgrade.py
-sed -i 's|git clone https://github.com/usmannasir/cyberpanel|git clone https://'${GIT_URL}'|g' upgrade.py
+sed -i 's|git clone https://github.com/novuscloud/cyberpanel|git clone https://'${GIT_URL}'|g' upgrade.py
 fi
 
 /usr/local/CyberPanel/bin/python upgrade.py $BRANCH_NAME
