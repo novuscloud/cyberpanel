@@ -192,7 +192,7 @@ rm -rf /root/cyberpanel-tmp
 special_change(){
 sed -i 's|cyberpanel.sh|'$DOWNLOAD_SERVER'|g' install.py
 sed -i 's|mirror.cyberpanel.net|'$DOWNLOAD_SERVER'|g' install.py
-sed -i 's|git clone https://github.com/novuscloud/cyberpanel|echo downloaded|g' install.py
+sed -i 's|git clone https://github.com/usmannasir/cyberpanel|echo downloaded|g' install.py
 #change to CDN first, regardless country
 #sed -i 's|http://|https://|g' install.py
 
@@ -250,7 +250,7 @@ if [[ $SERVER_COUNTRY == "CN" ]] ; then
 	sed -i 's|https://copr.fedorainfracloud.org/coprs/copart/restic/repo/epel-7/copart-restic-epel-7.repo|https://'$DOWNLOAD_SERVER'/restic/restic.repo|g' install.py
 	sed -i 's|yum -y install http://cyberpanel.sh/gf-release-latest.gf.el7.noarch.rpm|wget -O /etc/yum.repos.d/gf.repo https://'$DOWNLOAD_SERVER'/gf-plus/gf.repo|g' install.py
 	sed -i 's|dovecot-2.3-latest|dovecot-2.3-latest-mirror|g' install.py
-	sed -i 's|git clone https://github.com/novuscloud/cyberpanel|wget https://cyberpanel.sh/cyberpanel-git.tar.gz \&\& tar xzvf cyberpanel-git.tar.gz|g' install.py
+	sed -i 's|git clone https://github.com/usmannasir/cyberpanel|wget https://cyberpanel.sh/cyberpanel-git.tar.gz \&\& tar xzvf cyberpanel-git.tar.gz|g' install.py
 	sed -i 's|http://repo.dovecot.org/ce-2.3-latest/centos/$releasever/RPMS/$basearch|https://'$DOWNLOAD_SERVER'/dovecot/|g' install.py
 	sed -i 's|'$DOWNLOAD_SERVER'|cyberpanel.sh|g' install.py
 	sed -i 's|https://www.litespeedtech.com/packages/5.0/lsws-5.4.2-ent-x86_64-linux.tar.gz|https://'$DOWNLOAD_SERVER'/litespeed/lsws-'$LSWS_STABLE_VER'-ent-x86_64-linux.tar.gz|g' installCyberPanel.py
