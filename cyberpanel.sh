@@ -1083,7 +1083,7 @@ export LC_ALL=en_US.UTF-8
 
 if [[ $DEV == "ON" ]] ; then
 	#install dev branch
-	#wget https://raw.githubusercontent.com/usmannasir/cyberpanel/$BRANCH_NAME/requirments.txt
+	#wget https://raw.githubusercontent.com/novuscloud/cyberpanel/$BRANCH_NAME/requirments.txt
 	cd /usr/local/
 	virtualenv -p /usr/bin/python3 CyberPanel
   source /usr/local/CyberPanel/bin/activate

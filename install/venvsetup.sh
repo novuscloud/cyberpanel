@@ -887,18 +887,18 @@ pip install virtualenv
 virtualenv --system-site-packages /usr/local/CyberPanel
 source /usr/local/CyberPanel/bin/activate
 rm -rf requirements.txt
-wget -O requirements.txt https://raw.githubusercontent.com/usmannasir/cyberpanel/1.8.0/requirments.txt
+wget -O requirements.txt https://raw.githubusercontent.com/novuscloud/cyberpanel/1.8.0/requirments.txt
 pip install --ignore-installed -r requirements.txt
 virtualenv --system-site-packages /usr/local/CyberPanel
 fi
 
 if [[ $DEV == "ON" ]] ; then
 	#install dev branch 
-	#wget https://raw.githubusercontent.com/usmannasir/cyberpanel/$BRANCH_NAME/requirments.txt
+	#wget https://raw.githubusercontent.com/novuscloud/cyberpanel/$BRANCH_NAME/requirments.txt
 	cd /usr/local/
 	python3.6 -m venv CyberPanel
 	source /usr/local/CyberPanel/bin/activate
-	wget -O requirements.txt https://raw.githubusercontent.com/usmannasir/cyberpanel/$BRANCH_NAME/requirments.txt
+	wget -O requirements.txt https://raw.githubusercontent.com/novuscloud/cyberpanel/$BRANCH_NAME/requirments.txt
 	pip3.6 install --ignore-installed -r requirements.txt
 fi
 
@@ -952,7 +952,7 @@ if grep "CyberPanel installation successfully completed" /var/log/installLogs.tx
 if [[ $DEV == "ON" ]] ; then
 python3.6 -m venv /usr/local/CyberCP
 source /usr/local/CyberCP/bin/activate
-wget -O requirements.txt https://raw.githubusercontent.com/usmannasir/cyberpanel/$BRANCH_NAME/requirments.txt
+wget -O requirements.txt https://raw.githubusercontent.com/novuscloud/cyberpanel/$BRANCH_NAME/requirments.txt
 pip3.6 install --ignore-installed -r requirements.txt
 systemctl restart lscpd
 fi

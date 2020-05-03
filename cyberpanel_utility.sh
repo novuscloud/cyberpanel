@@ -5,7 +5,7 @@ export LC_CTYPE=en_US.UTF-8
 SUDO_TEST=$(set)
 BRANCH_NAME="stable"
 GIT_URL="github.com/novuscloud/cyberpanel"
-GIT_CONTENT_URL="raw.githubusercontent.com/usmannasir/cyberpanel"
+GIT_CONTENT_URL="raw.githubusercontent.com/novuscloud/cyberpanel"
 
 check_OS() {
 echo -e "\nChecking OS..."

@@ -2145,7 +2145,7 @@ vmail
         ## Add LSPHP7.4 TO LSWS Ent configs
 
         if not os.path.exists('/usr/local/lsws/bin/openlitespeed'):
-            command = 'wget https://raw.githubusercontent.com/usmannasir/cyberpanel/stable/install/litespeed/httpd_config.xml'
+            command = 'wget https://raw.githubusercontent.com/novuscloud/cyberpanel/stable/install/litespeed/httpd_config.xml'
             Upgrade.executioner(command, command, 0)
             #os.remove('/usr/local/lsws/conf/httpd_config.xml')
             #shutil.copy('httpd_config.xml', '/usr/local/lsws/conf/httpd_config.xml')
