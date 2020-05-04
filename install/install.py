@@ -2194,7 +2194,8 @@ vmail
             pass
 
     def installAcme(self):
-        command = 'wget -O -  https://get.acme.sh | sh'
+        #command = 'wget -O -  https://get.acme.sh | sh'
+        command = 'curl https://get.acme.sh | sh'
         subprocess.call(command, shell=True)
 
         command = '/root/.acme.sh/acme.sh --upgrade --auto-upgrade'
