@@ -2197,8 +2197,8 @@ vmail
         command = 'wget -O -  https://get.acme.sh | sh'
         subprocess.call(command, shell=True)
 
-        command = '/root/.acme.sh/acme.sh --upgrade --auto-upgrade'
-        # command = '/.acme.sh/acme.sh --upgrade --auto-upgrade'
+        #command = '/root/.acme.sh/acme.sh --upgrade --auto-upgrade'
+        command = '.acme.sh/acme.sh --upgrade --auto-upgrade'
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
     def installRedis(self):
